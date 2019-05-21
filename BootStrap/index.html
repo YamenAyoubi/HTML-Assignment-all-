@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> BootStrap Assigment</title>
     <style>
         body {
@@ -78,13 +79,13 @@
             </ol>
             <div class="carousel-inner img-thumbnail">
                 <div class="item active">
-                    <img src="/img/201.jpeg" alt="4" style="width:100%;">
+                    <img src="/img/8.jpg" alt="4" style="width:100%;">
                 </div>
                 <div class="item">
                     <img src="/img/200.jpg" alt="5" style="width:100%;">
                 </div>
                 <div class="item">
-                    <img src="/img/8.jpg" alt="6" style="width:100%;">
+                    <img src="/img/15.jpg" alt="6" style="width:100%;">
                 </div>
                 <div class="item">
                     <img src="/img/202.jpg" alt="7" style="width:100%;">
@@ -119,8 +120,7 @@
                         <li><a href="https://arabica.coffee/en/">Arabica Coffee</a></li>
                         <li><a href="https://consciousbean.com/coffee">Conscious Bean</a></li>
                         <li><a href="https://www.thecoffeecompass.com/">Coffe Compass</a></li>
-                        <li><a
-                                href="https://financesonline.com/top-10-most-expensive-coffee-in-the-world-luwak-coffee-is-not-the-no-1/">Top
+                        <li><a href="https://financesonline.com/top-10-most-expensive-coffee-in-the-world-luwak-coffee-is-not-the-no-1/">Top
                                 10</a></li>
                     </ul>
                 </h2>
@@ -143,8 +143,8 @@
                     Arabica beans consist of 0.8–1.4% caffeine and Robusta beans consist of 1.7–4% caffeine.[4] As
                     coffee is one of the world's most widely consumed beverages, coffee beans are
                     a major cash crop and an important export product, accounting for over 50% of some developing
-                    nations' foreign exchange earnings</p>
-                <p class="text-justify">According to popular legend, the coffee plant was discovered in Ethiopia by a
+                    nations' foreign exchange earnings
+                    According to popular legend, the coffee plant was discovered in Ethiopia by a
                     goatherd named Kaldi.
 
                     Significant dates
@@ -167,7 +167,7 @@
                     in the United States in 2011 was
                     4.24 kg (9 lbs), and the value of coffee imported exceeded $8 billion.[7] As of 2015, Americans
                     consumed approximately 400 million cups of coffee per day,
-                    making the United States the leading consumer of coffee in the world.[8]</p>
+                    making the United States the leading consumer of coffee in the world.[8].
             </div>
         </div>
     </div>
@@ -176,7 +176,7 @@
         <div class="navbar navbar-default col-md-6">
             <div class="container">
                 <h2>Contact form </h2>
-                <form action="/Subscribe.php">
+                <form action="/action_page.php">
                     <div class="form-group">
                         <label for="first name">First Name</label>
                         <input class="width 200px" type="text" id="first name" name="first name"
@@ -193,11 +193,11 @@
                     <div>
                         <label for="subject">Subject</label>
                         <textarea id="subject" name="subject" placeholder="Write something.."
-                            style="width: 450px; height: 125px; margin: 0px"></textarea>
+                            style="width: 450px; height: 135px; margin: 0px"></textarea>
                     </div>
-                    <form action="/Subscribe.php">
-                        <input type="reset" class="col-xl-1 btn btn-info active" value="Reset">
-                        <input type="submit" class="col-xl-1 btn btn-info active" value="Submit">
+                    <form action="/action_page.php">
+                        <input type="reset" class="col-xl-1 btn  btn-danger active" value="Reset">
+                        <input type="submit" class="col-xl-1 btn btn-success active" value="Submit">
                     </form>
                 </form>
             </div>
@@ -209,11 +209,16 @@
     </div>
     <br><br><br>
     <footer class="navbar navbar-default text-center">
-        &copy; Copyright: 2019. Yamen Ayoubi.
+            <i class="fa fa-copyright"></i> 
+            Copyright: <span id=year>year</span> Yamen Ayoubi.
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    <script>
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
     </script>
 </body>
 </html>
